@@ -20,3 +20,15 @@ chmod 444 dir	    r--       r--	       r--	                          ❌ Useless
 chmod 600 dir	    rw-	      ---	       ---	                          ❌ Invalid — even owner can’t cd in (no execute bit).
 
 
+What is u+x?
+u+x means: Add execute permission to the user (owner) only, without touching other permissions. It adds the execute bit to the existing permissions of the user. (like if user has 600 permision)
+
+here if we change from 600 to 700 user will have execute permission but it will change the permission on Group and Others.
+
+SO that is a different using +x, it will add to specific without affeting existing permission for group and others.
+
+u+x    = user specific
+
+g+x    = Group specific
+
+0+x    = Other specific
