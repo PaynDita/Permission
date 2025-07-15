@@ -1,0 +1,22 @@
+Common chmod DIRECTORY Permissions
+
+
+Command          	User	    Group	    Others	                        Meaning
+
+chmod 700 dir	    rwx	      ---	       ---	                          Private directory: Only owner can access (list, enter, modify).
+
+chmod 755 dir    	rwx	      r-x      	 r-x	                          Public readable: Anyone can enter and list; only owner can modify.
+
+chmod 750 dir	    rwx	      r-x	       ---	                          Group members can access; others can't.
+
+chmod 770 dir	    rwx	      rwx	       ---	                          Owner and group can do everything; others have no access.
+
+chmod 775 dir	    rwx	      rwx	       r-x	                          Owner/group full access; others can view and enter.
+
+chmod 711 dir	    rwx	      --x	       --x	                          Others can access contents if they know file names (no listing allowed).
+
+chmod 444 dir	    r--       r--	       r--	                          ❌ Useless for directories — no x, so no one can cd into it.
+
+chmod 600 dir	    rw-	      ---	       ---	                          ❌ Invalid — even owner can’t cd in (no execute bit).
+
+
