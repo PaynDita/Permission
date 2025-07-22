@@ -32,3 +32,11 @@ u+x    = user specific
 g+x    = Group specific
 
 0+x    = Other specific
+
+
+"u+x is a user permission, u+s is a file behavior setting."
+
+✅ In other words:
+u+x = lets a user run a file
+
+u+s = makes the file run as the owner
