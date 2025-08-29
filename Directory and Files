@@ -39,4 +39,10 @@ g+x    = Group specific
 ✅ In other words:
 u+x = lets a user run a file
 
-u+s = makes the file run as the owner
+u+s = makes the file run as the owner Or 4000 and u+s both set SUID
+
+4000 → numeric way
+
+u+s → symbolic way
+
+find / -perm /4000 2>/dev/null
